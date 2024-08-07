@@ -5,11 +5,19 @@
     src: url('fonts/Lonely\ Coffee.otf') format('opentype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'cordel';
+    src: url('fonts/PassionOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sriracha';
+    src: url('fonts/Sriracha-Regular.ttf') format('truetype');
+}
 
 :root {
     --fonte1: 'cordel', sans-serif;
-    --fonte2: cursive;
+    --fonte2: 'sriracha', cursive;
 }
 
 * {
@@ -22,12 +30,13 @@
 header {
     max-height: 20vw;
     background-color: black;
-    padding-bottom: 4.5vw;
-    padding-top: 4.5vw;
+    padding-bottom: 2.5vw;
+    padding-top: 2.5vw;
 }
 
 header h1 {
-    font: bolder 8vw var(--fonte1);
+    font: bolder 10vw var(--fonte1);
+    font-variant: small-caps;
     color: white;
     text-align: center;
 }
@@ -49,51 +58,38 @@ a:hover {
 main article p {
     color:  black;
     line-height: 2em;
-    width: 45vw;
     padding-left: 20px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 40px 0px 40px 35px;
     font-family: var(--fonte2);
     font-size: 4vw;
 }
 
 #flor {
-    position: relative;
-    background-image: url('imagens/background001.jpg');
-    background-position: center center;
+    background: grey url('imagens/background001.jpg') center center no-repeat;
+    background-size: cover;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     box-shadow: inset 0px 15px 50px rgba(0, 0, 0, 0.555);
-    background-size: 100% 100%;
-    height: 80vw;
 }
 
 .background_texto p {
-    position: absolute;
+    display: inline-block;
     color: white;
-    width: 48vw;
-    background-color: rgba(0, 0, 0, 0.3021);
-    margin: 0px;
-    font-size: 4vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-95%, -50%);
+    background-color: rgba(0, 0, 0, 0.302);
+    margin: 0px 0px 0px 35px;
+    padding-right: 15px;
 }
 
 #livrotexto {
-    position: absolute;
-    width: 48vw;
-    background-color: rgba(0, 0, 0, 0.3021);
-    margin: 0px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-95%, -50%);
+    background-color: rgba(0, 0, 0, 0.302);
+    margin: 0px 0px 0px 35px;
 }
 
 #livro {
-    position: relative;
-    height: 80vw;
-    background-image: url('imagens/background002.jpg');
-    background-position: center center;
-    background-size: 100% 100%;
+    background: grey url('imagens/background002.jpg') center center no-repeat;
+    background-size: cover;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     box-shadow: inset 0px 15px 50px rgba(0, 0, 0, 0.555);
 }
 
